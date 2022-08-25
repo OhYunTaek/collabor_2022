@@ -1,0 +1,28 @@
+create table msc모델(
+차이름 varchar2(30),
+번호판 number primary key,
+대여비용 number,
+제조사 varchar2(30),
+마일리지 number
+);
+insert into msc모델 values('911카레라', 9867, 10000, '포르쉐', 10);
+insert into msc모델 values('팬텀', 8263, 20000, '롤스로이스', 20);
+insert into msc모델 values('아벤타도르', 4217, 30000, '람보르기니', 30);
+insert into msc모델 values('벤테이가', 3343, 12000, '벤틀리', 12);
+insert into msc모델 values('F8스파이더',2838, 15000, '페라리', 15);
+
+
+create table msc등급(
+고객등급 varchar2(30) primary key,
+달성조건 number,
+할인율 varchar2(30)
+);
+
+insert into msc등급 values('S', 1000, '30%');
+insert into msc등급 values('A', 500, '15%');
+insert into msc등급 values('B', 250, '10%');
+insert into msc등급 values('C', 100, '5%');
+insert into msc등급 values('D', 0, '1%');
+
+select * from msc모델;
+select * from msc등급;
